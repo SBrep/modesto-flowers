@@ -36,9 +36,6 @@ button {
   background-color: #FFE182;
   cursor: pointer;
 }
-button p {
-  color: black;
-}
 @media only screen and (max-width: 768px) {
   button {
     font-size: 16px;
