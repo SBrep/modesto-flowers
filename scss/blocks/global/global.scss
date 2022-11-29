@@ -29,6 +29,7 @@ button {
     border-radius: 0.8em;
     border: none;
     background-color: $color-button;
+    color: $text-color;
     cursor: pointer;
 
     @media only screen and (max-width: $screen-md) {

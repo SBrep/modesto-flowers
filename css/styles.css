@@ -34,6 +34,7 @@ button {
   border-radius: 0.8em;
   border: none;
   background-color: #FFE182;
+  color: #372E11;
   cursor: pointer;
 }
 @media only screen and (max-width: 768px) {
