@@ -29,8 +29,11 @@ button {
     border-radius: 0.8em;
     border: none;
     background-color: $color-button;
-    color: $text-color;
     cursor: pointer;
+
+    p{
+        color: black
+    }
 
     @media only screen and (max-width: $screen-md) {
         font-size: 16px;

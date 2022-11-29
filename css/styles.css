@@ -34,8 +34,10 @@ button {
   border-radius: 0.8em;
   border: none;
   background-color: #FFE182;
-  color: #372E11;
   cursor: pointer;
+}
+button p {
+  color: black;
 }
 @media only screen and (max-width: 768px) {
   button {
@@ -58,6 +60,11 @@ button {
   .page-header {
     max-height: 90vh;
     background-image: url(../img/flowers-md.png);
+  }
+}
+@media only screen and (max-width: 1366px) and (min-aspect-ratio: 6/5) {
+  .page-header {
+    height: auto;
   }
 }
 
@@ -138,7 +145,8 @@ button {
   padding: 60px 0 60px 0;
   display: flex;
   flex-direction: column;
-  margin: 5vh auto;
+  margin: auto;
+  margin-top: 5vh;
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
@@ -169,11 +177,6 @@ button {
 @media only screen and (max-width: 768px) {
   .page-header__info .button--light {
     margin-left: 6px;
-  }
-}
-@media only screen and (max-width: 1366px) {
-  .page-header__info {
-    margin: auto;
   }
 }
 @media (max-aspect-ratio: 6/5) {
