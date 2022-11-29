@@ -1,0 +1,89 @@
+.hamburger {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    z-index: 100;
+    display: none;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 37px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 5px;
+    border:none;
+    
+    @media only screen and (max-width: $screen-lg) {
+        display: inline-block;
+    }
+    @media only screen and (max-width: $screen-md) {
+        top: 7px;
+    }
+}
+
+.btn__hamb {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+      cursor: pointer; 
+}
+.btn__hamb div {
+      width: 100%;
+      height: 100%; 
+}
+.btn__hamb:before, .btn__hamb:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+}
+.btn__hamb:before {
+      top: -8px; 
+}
+.btn__hamb:after {
+    top: 8px; 
+}
+.btn__hamb--triangle-inverce div{
+    width: 65%;
+    background: $text-color;
+}
+.btn__hamb--triangle-inverce:before {
+    background: $text-color;
+}
+.btn__hamb--triangle-inverce:after {
+    width: 45%;
+    background: $text-color;
+}
+.hamburger__refs {
+    position: absolute;
+    height: 126px;
+    width: 50vw;
+    top: -100%;  right: -12px; bottom: 0;
+    background-color: $color-button;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 40px;
+    justify-content: space-around;
+    border-bottom-left-radius: 3em;
+    
+    @media only screen and (max-width: $screen-lg) {
+        width: 80vw;
+    }
+
+    @media only screen and (max-width: $screen-md) {
+        width: 100vw;
+    }
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked + .hamburger + .hamburger__refs {
+    top: 0px;
+    transform: scale(1);
+}

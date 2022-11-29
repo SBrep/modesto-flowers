@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Vsevolod Babansky">
+    <title>Modesto flowers</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marmelad&family=Raleway:wght@300;500;600&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="Modesto icon" href="icons/modestoIcon.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Head section -->
+
+    <header class="page-header">
+        <nav class="page-header__navbar">
+            <img class="page-header__logo" src="icons/modestoIcon.png" />
+            <div class="refs">
+                <a href="">Магазины</a>
+                <a href="">Контакы</a>
+                <a href="">О нас</a>
+            </div>
+            <div>
+                <a class="number" href="tel:+36787547894">+3 67 8754 7894</a>
+                <span>Ru</span><span class="eng">Eng</span>
+                <a class="login" href="">Войти</a>
+
+                <button class="navbar__button">Создать аккаунт</button>
+                <!-- Hamburger button -->
+                <input id="toggle" type="checkbox"></input>
+
+                <label for="toggle" class="hamburger">
+                    <div class="btn__hamb btn__hamb--triangle-inverce">
+                        <div></div>
+                    </div>
+                </label>
+                <div class="hamburger__refs">
+                    <a href="">Магазины</a>
+                    <a href="">Контакы</a>
+                    <a href="">О нас</a>
+                </div>
+            </div>
+        </nav>
+        <div class="page-header__info">
+            <h1 class="head">
+                Мы будем рады сотрудничать с вами на платформе 'Международной цветочной онлайн-площадки'!
+            </h1>
+            <p class="para">Присоединяйтесь к нам и начните получать доход с бизнеса в первый месяц регистрации! </p>
+            <div>
+                <button>Начать покупать</button>
+                <button class="button--light">Начать продавать</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main section with form -->
+
+    <main class="page-main">
+        <div class="form">
+            <div class="form__description">
+                <h2>Заполните форму и начните развивать свой бизнес прямо сейчас!</h2>
+                <p>Регистрация на нашем сайте занимает несколько минут, просим ответить на все вопросы полностью и корректно! После подтверждения регистрации вы попадёте в систему, где большинство процессов автоматизированы, что сэкономит ваше время и деньги!</p>
+            </div>
+            <form action="" method="post">
+                <div class="step step-1 active form__data">
+                    <div>
+                        <fieldset>
+                            <p>Ваше имя</p>
+                            <input placeholder="Фролова Александра Васильевна" type="text" tabindex="1" required >
+                        </fieldset>
+                        <fieldset>
+                            <p>Название компании</p>
+                            <input placeholder="ООО Атлантика" type="text" tabindex="1" required >
+                        </fieldset>
+                        <fieldset>
+                            <p>E-mail</p>
+                            <input placeholder="flolovaalexa@com.rur" type="email" tabindex="2" required>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <p>Номер телефона</p>
+                            <input placeholder="+7 (XXX) - XXX XX XX" type="tel" tabindex="3" required>
+                        </fieldset>
+                        <fieldset>
+                            <p>Промокод</p>
+                            <input placeholder="HGF864" type="text" tabindex="1" required >
+                        </fieldset>
+                        <fieldset class="button">
+                                <button type="button" class="next-btn">Далее</button>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="step step-2 form__data">
+                    <div>
+                        <fieldset>
+                            <p>Пароль</p>
+                            <input placeholder="Фролова Александра Васильевна" type="password" tabindex="1" required >
+                        </fieldset>
+                        <fieldset>
+                            <p>Подтвердите пароль</p>
+                            <input placeholder="ООО Атлантика" type="password" tabindex="1" required >
+                        </fieldset>
+                        <fieldset>
+                            <img src="img/letters-form.png" />
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <p>Введите символы из картинки</p>
+                            <input placeholder="Код из картинки" type="text" tabindex="3" required>
+                        </fieldset>
+                        <fieldset class="buttons">
+                            <button type="button" class="previous-btn button--light">Назад</button>
+                            <button type="submit" class="submit-btn">Подтвердить</button>
+                        </fieldset>
+                        <fieldset>
+                            <label class="checkbox">
+                                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe" required> Я даю согласие на обработку моих персональных данных и правовых документов
+                            </label>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="step step-3">
+                    <div>
+                        <h2>Form is submitted</h2>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Foot section -->
+
+    <footer class="page-footer">
+        <div class="page-footer__content">
+            <div class="office-grid">
+                <h3>Наши офисы</h3>
+                <div class="page-footer__office">
+                    <p>Московский офис<br>
+                        +7 455 267-89-07<br>
+                        Берсеневский пер., д. 56, стр. 4,<br>
+                        6-й эт., Москва, 567754
+                    </p>
+                    <p>
+                        Ростовский офис<br>
+                        +7 878 888-01-67<br>
+                        Буденовский пр-т, д. 84, 6-й эт.,<br>
+                        Ростов-на-Дону, 679965
+                    </p>
+                </div>
+            </div>
+            <div class="social-media-grid">
+                <h3>Мы в соц сетях</h3>
+                <div class="page-footer__social-media">
+                    <a href="">Instagram</a>
+                    <a href="">Facebook</a>
+                </div>
+            </div>
+            <div class="contact-grid">
+                <h3>Свяжитесь с нами</h3>
+                <div class="page-footer__contact">
+                    <a class="number" href="tel:+36787547894">+3 67 8754 7894</a>
+                    <a href="mailto:mflowers@flo.com">mflowers@flo.com</a>
+                    <button>Написать<img src="icons/mail.png" /></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+.page-footer {
+    display: flex;
+    min-height: 339px;
+    background-color: $color-footer;
+    color: $text-color--light;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+}
+
+.page-footer__content {
+    margin: auto;
+    width: 74vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $screen-lg) {
+        display: grid;
+        grid-template-areas: "one three"
+                             "two .";
+        
+    }
+    
+    @media only screen and (max-width: $screen-md) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.page-footer__office {
+    margin-top: 24px;
+    margin-bottom: 42px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    
+    @media only screen and (max-width: $screen-lg) {
+        flex-direction: column;
+        gap: 20px;
+    }
+    @media only screen and (max-width: $screen-md) {
+        
+    }
+}
+.page-footer__social-media {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    @media only screen and (max-width: $screen-lg) {
+        flex-direction: column;
+        gap: 20px;
+    }
+    @media only screen and (max-width: $screen-md) {
+        
+    }
+}
+.page-footer__contact {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    .number {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+    }
+    button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 48px;
+        width: inherit;
+    }
+}
+.office-grid {
+    @media only screen and (max-width: $screen-lg) {
+        flex-direction: column;
+        gap: 20px;
+        grid-area: one;
+    }
+}
+.social-media-grid {
+    @media only screen and (max-width: $screen-lg) {
+        grid-area: two;
+        gap: 20px;
+    }
+}
+.contact-grid {
+    @media only screen and (max-width: $screen-lg) {
+        grid-area: three;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,115 @@
+:root {
+    --next-step: false;
+  }
+
+.page-main {
+    min-height: 100vh;
+    background-image: url(../img/hatWithFlowers.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: 50px;
+    width: 60vw;
+    padding: 80px;
+    background-color: $color-ground;
+
+    @media only screen and (max-width: $screen-lg) {
+        grid-template-columns: none;
+        grid-template-rows: 4fr 5fr;
+        padding: 32px;
+        width: 70vw;
+        min-width: 688px;
+    }
+
+    @media only screen and (max-width: $screen-md) {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        min-width: 0;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+
+}
+.form__description {
+
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+}
+
+.form__data {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 20px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        gap: 20px;
+    }
+    fieldset {
+        width: 100%;
+        border: none;
+        display: flex;
+        flex-direction: column;
+
+        input {
+            margin-top: 10px;
+            padding: 16px 8px 16px 8px;
+            border: none;
+            background-color: $color-groun--form;
+            border-radius: 10px;
+        }
+    }
+    button {
+        margin-top: 26px;
+        height: 51px;
+    }
+    
+    .buttons {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 10px;
+        
+        .button--light {
+            background-color: $color-button--light;
+        }
+    }
+
+}
+
+.step {
+    display: none;
+}
+.step.active {
+    display: flex;
+    @media only screen and (max-width: $screen-lg) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    @media only screen and (max-width: $screen-md) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.form__submitted {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        font-size: 30px;
+    }
+}

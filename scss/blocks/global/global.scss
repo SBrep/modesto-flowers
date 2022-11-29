@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+
+    @media only screen and (max-width: $screen-md) {
+        font-size: 16px;
+    }
+}
+h1, h2, h3 {
+    font-family: 'Marmelad', sans-serif;;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+button {
+    font-weight: 600;
+    font-size: 18px;
+    height: 65px;
+    padding: 0 34px 0 34px;
+    border-radius: 0.8em;
+    border: none;
+    background-color: $color-button;
+    cursor: pointer;
+
+    @media only screen and (max-width: $screen-md) {
+        font-size: 16px;
+        padding: 0 8px 0 8px;
+        height: 43px;
+    }
+}
