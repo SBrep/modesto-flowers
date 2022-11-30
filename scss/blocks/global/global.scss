@@ -30,7 +30,10 @@ button {
     border: none;
     background-color: $color-button;
     cursor: pointer;
-
+    color: $text-color;
+    -webkit-appearance: none;
+    -webkit-text-fill-color: $text-color;
+    opacity: 1;
 
     @media only screen and (max-width: $screen-md) {
         font-size: 16px;

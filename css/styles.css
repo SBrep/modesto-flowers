@@ -35,6 +35,10 @@ button {
   border: none;
   background-color: #FFE182;
   cursor: pointer;
+  color: #372E11;
+  -webkit-appearance: none;
+  -webkit-text-fill-color: #372E11;
+  opacity: 1;
 }
 @media only screen and (max-width: 768px) {
   button {
